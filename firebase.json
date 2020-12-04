@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/my-clone-bank",
+    "public": "dist/ng-bank-clone",
     "ignore": [
       "firebase.json",
       "**/.*",
