@@ -1,0 +1,28 @@
+<section id="fingerPrint">
+  <div class="container-fluid">
+    <app-row-header></app-row-header>
+    <div class="row text-center row-header-finger-print"></div>
+    <app-row-separation
+      [class]="'d-none d-lg-block'"
+      [rowSize]="160"
+    ></app-row-separation>
+    <app-row-separation
+      [class]="'d-md-block d-lg-none'"
+      [rowSize]="40"
+    ></app-row-separation>
+    <div class="row">
+      <div class="col-lg-6 col-md-10 offset-lg-3 offset-md-1">
+        <app-finger-print-card></app-finger-print-card>
+      </div>
+    </div>
+    <app-row-separation [rowSize]="160"></app-row-separation>
+    <div class="row">
+      <div class="col-lg-6 col-md-10 offset-lg-3 offset-md-1">
+        <app-btn-black-full-width
+          [extraClass]="'mb-5'"
+          [btnName]="'Not Now'"
+        ></app-btn-black-full-width>
+      </div>
+    </div>
+  </div>
+</section>

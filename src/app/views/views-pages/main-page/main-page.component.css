@@ -1,0 +1,23 @@
+.main {
+  background-image: url("../../../../assets/img/bg-img-main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  min-height: 100vh;
+}
+
+.col-separation {
+  height: 40px;
+}
+
+.logo-main {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.col-separation-lg {
+  height: 150px;
+}

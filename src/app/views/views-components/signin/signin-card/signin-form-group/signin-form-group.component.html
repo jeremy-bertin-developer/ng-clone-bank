@@ -1,0 +1,9 @@
+<div class="form-group" *ngFor="let signinFormGroup of signinFormGroups">
+  <label class="text-dark ml-1">{{ signinFormGroup.labelName }}</label
+  ><input
+    class="shadow-sm form-control border-0 text-dark"
+    [type]="signinFormGroup.type"
+    [name]="signinFormGroup.name"
+    [placeholder]="signinFormGroup.placeHolder"
+  />
+</div>

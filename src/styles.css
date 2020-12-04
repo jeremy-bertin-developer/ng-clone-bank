@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.border-radius-30px {
+  border-radius: 30px !important;
+}
+
+.bg-plain-yellow {
+  background-color: rgba(251, 243, 22) !important;
+}
+
+.bg-82-yellow {
+  background-color: rgba(251, 243, 22, 0.82) !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

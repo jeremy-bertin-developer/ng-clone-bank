@@ -1,0 +1,29 @@
+<section class="text-center main" id="main">
+  <div class="container-fluid">
+    <app-row-separation [rowSize]="40"></app-row-separation>
+    <app-row-separation
+      [rowSize]="160"
+      [extraClass]="'d-none d-sm-none d-md-none d-lg-block'"
+    ></app-row-separation>
+    <div class="row d-block text-center">
+      <div class="col d-block">
+        <img
+          class="shadow-lg logo-main img-fluid"
+          src="assets/img/my-clone-bank-logo.png"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <app-row-separation [rowSize]="40"></app-row-separation>
+    <div class="row d-block text-center">
+      <div class="col-auto col-lg-6 col-md-10 offset-lg-3 offset-md-1">
+        <app-main-button
+          *ngFor="let button of mainPage"
+          [name]="button.buttonName"
+          [class]="button.className"
+        >
+        </app-main-button>
+      </div>
+    </div>
+  </div>
+</section>

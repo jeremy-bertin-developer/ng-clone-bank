@@ -1,0 +1,7 @@
+#signIn {
+  min-height: 100vh;
+  background-image: url('../../../../assets/img/bg-img-main.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

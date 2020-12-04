@@ -1,0 +1,9 @@
+<div>
+  <div class="btn-group btn-group-sm btn-group-wallet" role="group">
+    <app-wallet-button
+      *ngFor="let btnName of buttonNames"
+      [btnName]="btnName | uppercase"
+      [class]="'text-dark rounded mr-2 border-0 btn-wallet'"
+    ></app-wallet-button>
+  </div>
+</div>

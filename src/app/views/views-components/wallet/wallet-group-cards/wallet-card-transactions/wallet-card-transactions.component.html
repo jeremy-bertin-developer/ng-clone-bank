@@ -1,0 +1,68 @@
+<div class="">
+  <div class="card shadow mt-3 border-0 border-radius-30px">
+    <div class="card-body">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa fa-clock-o mr-2 text-muted"></i>
+        <p class="text-muted m-0">History of Transactions</p>
+      </div>
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr class="float-none">
+              <td
+                class="justify-content-center align-items-center border-top-0"
+              >
+                <img
+                  class="rounded-circle img-fluid border border-dark d-table-cell"
+                  width="20px"
+                  loading="lazy"
+                  src="assets/img/picture-zara.png"
+                />
+              </td>
+
+              <td class="text-muted border-top-0 font-size-table-cell">
+                29 Sep. 19
+              </td>
+              <td class="text-muted border-top-0 font-size-table-cell">
+                ZARA Wien
+              </td>
+              <td class="text-muted border-top-0 font-size-table-cell">
+                $ 49.99<i
+                  class="fa fa-long-arrow-alt-down float-none ml-1 text-danger"
+                ></i>
+              </td>
+            </tr>
+            <tr
+              class="float-none"
+              *ngFor="let item of tableRowCellData; let i = index"
+              [id]="i"
+            >
+              <td
+                class="justify-content-center align-items-center border-top-0"
+              >
+                <img
+                  class="rounded-circle img-fluid border border-dark d-table-cell"
+                  width="20px"
+                  loading="lazy"
+                  [src]="item.imgSrc"
+                />
+              </td>
+
+              <td class="text-muted font-size-table-cell">{{ item.date }}</td>
+              <td class="text-muted font-size-table-cell">
+                {{ item.merchant }}
+              </td>
+              <td class="text-muted font-size-table-cell">
+                {{ item.amount
+                }}<i class="fa fa-long-arrow-alt-down ml-1 text-danger"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <app-btn-black-full-width
+        [btnName]="'See Transactions'"
+      ></app-btn-black-full-width>
+    </div>
+  </div>
+</div>

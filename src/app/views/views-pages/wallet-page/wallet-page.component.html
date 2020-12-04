@@ -1,0 +1,16 @@
+<section id="wallet">
+  <div class="container-fluid">
+    <app-row-header-account
+      [headerAccountTitle]="'wallet'"
+    ></app-row-header-account>
+    <app-row-separation [rowSize]="40"></app-row-separation>
+    <div class="row text-center">
+      <app-wallet-group-button
+        [class]="
+          'col-md-10 col-lg-6 offset-0 offset-md-1 offset-lg-3 text-center'
+        "
+      ></app-wallet-group-button>
+    </div>
+    <app-wallet-group-cards></app-wallet-group-cards>
+  </div>
+</section>

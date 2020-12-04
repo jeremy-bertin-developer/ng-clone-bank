@@ -1,0 +1,16 @@
+.signin-button-main {
+  background-color: #f9f9f9;
+  opacity: 0.81;
+  border-radius: 25px !important;
+}
+
+.open-account-button-main {
+  background-color: #fbf316;
+  opacity: 0.81;
+  border-radius: 25px !important;
+  border-color: #fbf316;
+}
+
+.fa.fa-chevron-right.d-inline-block.float-right {
+  margin-top: 7px;
+}
