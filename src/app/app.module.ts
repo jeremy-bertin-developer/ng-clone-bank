@@ -32,6 +32,9 @@ import { BtnBlackFullWidthComponent } from './core/shared/shared-components/btn-
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { ModalComponent } from './core/shared/shared-components/modal/modal.component';
+import { DialogComponent } from './core/shared/shared-components/modal/dialog/dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -61,14 +64,10 @@ import { MatSliderModule } from '@angular/material/slider';
     WalletCardBalanceComponent,
     WalletCardTransactionsComponent,
     BtnBlackFullWidthComponent,
+    ModalComponent,
+    DialogComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    NoopAnimationsModule,
-    MatSliderModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NoopAnimationsModule, MatSliderModule, MatDialogModule],
   providers: [],
   bootstrap: [AppComponent],
 })
